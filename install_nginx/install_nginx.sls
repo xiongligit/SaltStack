@@ -9,7 +9,7 @@
 {% for item in items %}
 {{ soft_files }}/{{ item }}:
   file.managed:
-    - source: salt://install_nginx/{{ item }}
+    - source: salt://install/install_nginx/{{ item }}
     - makedirs: True
     - unless: test -f {{ soft_files }}/{{ item }}
 {% endfor %}
