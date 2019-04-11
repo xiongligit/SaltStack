@@ -1,6 +1,7 @@
 1.安装salt-master salt-minion
 -----
-salt-master:
+#### salt-master:
+
 安装
 ```shell
 yum -y install epel-release
@@ -22,7 +23,7 @@ systemctl restart salt-master
 systemctl enable salt-master
 ```
 
-salt-miion
+#### salt-miion
 安装
 ```shell
 yum -y install epel-release
@@ -44,8 +45,8 @@ systemctl enable salt-master
 
 2.批量部署
 ------
+#### salt-master:
 ```shell
-salt-master:
 cd /srv/salt
 git clone https://github.com/xiongligit/SaltStack.git
 mv SaltStack /srv/salt/install
