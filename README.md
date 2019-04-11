@@ -48,5 +48,5 @@ systemctl enable salt-master
 cd /srv/salt
 git clone https://github.com/xiongligit/SaltStack.git
 mv SaltStack /srv/salt/install
-salt 'test02' state.sls sls/install/install_nginx/install_nginx
+salt 'test02' state.sls install/install_nginx/install_nginx
 ```
