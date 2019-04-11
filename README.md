@@ -1,5 +1,5 @@
-1.安装salt-master salt-minion
------
+### 1.安装salt-master salt-minion
+
 #### salt-master:
 ```shell
 安装
@@ -42,8 +42,7 @@ systemctl restart salt-master
 systemctl enable salt-master
 ```
 
-2.批量部署
-------
+### 2.批量部署
 #### salt-master:
 ```shell
 cd /srv/salt
