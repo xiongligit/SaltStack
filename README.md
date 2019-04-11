@@ -1,15 +1,14 @@
 1.安装salt-master salt-minion
 -----
 #### salt-master:
-
-安装
 ```shell
+安装
 yum -y install epel-release
 yum -y install salt-master
 ```
 
-修改配置文件 
 ```shell
+修改配置文件 
 vim /etc/salt/master
 auto_accept: true
 file_roots:
@@ -17,28 +16,28 @@ file_roots:
     - /srv/salt/
 ```
 
-重启
 ```shell
+重启
 systemctl restart salt-master
 systemctl enable salt-master
 ```
 
 #### salt-miion
-安装
 ```shell
+安装
 yum -y install epel-release
 yum -y install salt-minion
 ```
 
-修改配置文件
 ```shell
+修改配置文件
 vim /etc/salt/minion 
 master: 192.168.1.1     ---master的IP
 id: test02
 ```
 
-重启
 ```shell
+重启
 systemctl restart salt-master
 systemctl enable salt-master
 ```
